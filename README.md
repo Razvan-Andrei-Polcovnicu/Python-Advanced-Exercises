@@ -138,3 +138,14 @@ Make the GUI user-friendly and intuitive, ensuring a seamless experience for use
 Test the app with various city names to ensure accurate retrieval and display of weather information.
 Consider adding additional features, such as a 5-day weather forecast or an option to switch between Celsius and Fahrenheit.
 Note: Before starting the exercise, ensure you have the necessary API key from OpenWeatherMap or the chosen weather API provider. Make sure to keep your API key confidential and do not share it publicly.
+
+# 6. Hangman Game
+The Hangman game is a classic word guessing game where the player has to guess a hidden word letter by letter. The player is given a limited number of tries (typically 6 wrong guesses) to guess the correct letters before the game ends. In this Python implementation, you can play the game in the terminal. Try to guess the word before running out of attempts!
+
+How to Play:
+Run the Python script.
+You have 6 tries to guess the word.
+Enter a letter for your guess.
+If the letter is correct, it will be revealed; otherwise, you lose a try.
+Keep guessing until you either guess the word or run out of tries.
+Have fun playing Hangman!
