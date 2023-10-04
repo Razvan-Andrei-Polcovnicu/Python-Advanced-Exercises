@@ -145,7 +145,19 @@ The Hangman game is a classic word guessing game where the player has to guess a
 How to Play:
 Run the Python script.
 You have 6 tries to guess the word.
+
 Enter a letter for your guess.
 If the letter is correct, it will be revealed; otherwise, you lose a try.
 Keep guessing until you either guess the word or run out of tries.
 Have fun playing Hangman!
+
+# 7. Employee Management System using Dataclasses
+
+This Python program manages employee records using dataclasses. It provides functionalities to add, display, search,
+update, and remove employees. Additionally, employees can be sorted by name and their data can be saved to and loaded
+from a file.
+
+Usage:
+- Run the script.
+- Choose from the menu options to perform various operations on employee records.
+
