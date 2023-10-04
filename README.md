@@ -1,6 +1,6 @@
 # Python-Advanced-Exercises
 
-1. Caesar Cipher Encryption and Decryption
+# 1. Caesar Cipher Encryption and Decryption
 
 This Python script implements the Caesar cipher algorithm, an ancient encryption technique used by Julius Caesar to secure his confidential messages. The cipher encrypts and decrypts text by shifting letters in the alphabet by a fixed key. This implementation allows users to choose between encryption and decryption modes, input their desired shift key, and enter the message they want to process.
 
@@ -23,7 +23,7 @@ Receive the processed message and share it securely!
 Feel free to experiment with different shift keys and messages to explore the power of the Caesar cipher encryption.
 
 
-2. Caesar Cipher Brute-Force Decryptor
+# 2. Caesar Cipher Brute-Force Decryptor
    
 This Python program allows users to decrypt messages encrypted using the Caesar cipher, even without knowing the encryption key. The Caesar cipher is a substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet.
 
@@ -38,7 +38,7 @@ Analyze the results to find the most meaningful decryption.
 Feel free to use and modify this tool for your cryptographic analysis needs. Happy decrypting!
 
 
-3. Automated Daily Email Reports Sender
+# 3. Automated Daily Email Reports Sender
 
 This Python script automates the process of sending daily reports to clients via email. The program achieves this by following a systematic approach:
 
@@ -56,7 +56,7 @@ Logging: Implements logging functionality to keep track of the emails that have 
 
 This versatile script can be adapted for various business contexts where automated daily email reports are required. Its modular design allows for easy customization, making it a valuable tool for businesses that prioritize efficient communication with clients.
 
-4. Automating File Transfer from External FTP Server
+# 4. Automating File Transfer from External FTP Server
 
 Description:
 
@@ -100,3 +100,41 @@ Expected Output:
 Upon running the script, it should establish a connection with the external FTP server, download the daily data files, transfer them to the local directory, and then move them to the company's internal network directory. The script should run automatically at the scheduled time each day, ensuring the timely and secure transfer of essential data files.
 
 Note: Before executing the script, ensure that the FTP server credentials, directory paths, and scheduling time are correctly configured in the script.
+
+# 5. Weather App with GUI
+
+Description:
+
+In this programming exercise, your task is to create a weather app that provides real-time weather information for a specific location. The app should display the current weather conditions, temperature, weather description, and local time.
+
+Requirements:
+
+API Integration:
+
+Utilize the OpenWeatherMap API (or any weather API of your choice) to fetch weather data. You will need to make an API call to retrieve weather information.
+GUI Development:
+
+Use the tkinter library to create a graphical user interface (GUI) for the weather app. The GUI should include the following components:
+Label: Prompting the user to enter a city.
+Entry Field: Allowing the user to input the city name.
+Button: Triggering the weather data retrieval when clicked.
+Labels: Displaying the weather information including temperature, weather description, and local time.
+Image Label: Showing weather icons representing current weather conditions (you can use the Pillow library to display images).
+Data Parsing and Display:
+
+Parse the JSON data returned by the API call to extract relevant weather information.
+Display the retrieved weather data (temperature in Celsius, weather description) on the GUI.
+Use weather icons corresponding to the current weather conditions.
+Timezone Handling:
+
+Account for the timezone difference between the user's location and the location for which the weather data is being retrieved. Display the local time of the queried location.
+Error Handling:
+
+Implement error handling mechanisms to manage API call failures and invalid JSON responses. Display user-friendly error messages in case of failures.
+Additional Considerations:
+
+Implement proper comments in the code to explain each section and major steps.
+Make the GUI user-friendly and intuitive, ensuring a seamless experience for users.
+Test the app with various city names to ensure accurate retrieval and display of weather information.
+Consider adding additional features, such as a 5-day weather forecast or an option to switch between Celsius and Fahrenheit.
+Note: Before starting the exercise, ensure you have the necessary API key from OpenWeatherMap or the chosen weather API provider. Make sure to keep your API key confidential and do not share it publicly.
