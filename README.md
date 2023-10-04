@@ -36,3 +36,22 @@ Run the program and enter the encrypted message.
 The program will perform a brute-force attack and display potential decrypted messages with valid English words.
 Analyze the results to find the most meaningful decryption.
 Feel free to use and modify this tool for your cryptographic analysis needs. Happy decrypting!
+
+
+3. Automated Daily Email Reports Sender
+
+This Python script automates the process of sending daily reports to clients via email. The program achieves this by following a systematic approach:
+
+SMTP Server Connection: Utilizes the smtplib library to connect to the email server securely. SMTP server details such as address, port number, username, and password need to be configured.
+
+Email Composition: Utilizes the email library to compose the email, including the recipient's email address, the subject, and the body of the email. The email body contains a polite message informing the recipient about the attached daily report.
+
+Attachment Handling: Utilizes the os library to access the report files that need to be sent. The script attaches the appropriate report file to the email before sending.
+
+Recipient List Iteration: Iterates through a list of recipients, each having a unique email address and a corresponding report file path. The script sends individual emails to each recipient with their respective report attachments.
+
+Scheduling: Uses the schedule library to schedule the script to run daily at a specific time (8:00 AM). This ensures that the email reports are sent out automatically without manual intervention.
+
+Logging: Implements logging functionality to keep track of the emails that have been sent and any errors that may occur during the email sending process. The log file, email_log.txt, captures the status of each email sent.
+
+This versatile script can be adapted for various business contexts where automated daily email reports are required. Its modular design allows for easy customization, making it a valuable tool for businesses that prioritize efficient communication with clients.
