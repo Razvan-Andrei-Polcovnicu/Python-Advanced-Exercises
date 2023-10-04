@@ -55,3 +55,48 @@ Scheduling: Uses the schedule library to schedule the script to run daily at a s
 Logging: Implements logging functionality to keep track of the emails that have been sent and any errors that may occur during the email sending process. The log file, email_log.txt, captures the status of each email sent.
 
 This versatile script can be adapted for various business contexts where automated daily email reports are required. Its modular design allows for easy customization, making it a valuable tool for businesses that prioritize efficient communication with clients.
+
+4. Automating File Transfer from External FTP Server
+
+Description:
+
+In this exercise, you work for a company that receives daily data files from external partners. These files are crucial for the company's operations, but they first need to be transferred securely to the company's internal network for processing and analysis. Your task is to automate this file transfer process using Python.
+
+Requirements:
+
+FTP Server Interaction:
+
+Use the ftplib library to establish a connection with the external FTP server.
+List the files available in the specified directory on the FTP server.
+Local Directory Management:
+
+Use the os library to check if a local directory exists where the downloaded files will be stored.
+Create the local directory if it does not exist.
+File Transfer:
+
+Iterate through the files on the FTP server using a loop.
+Download each file from the FTP server and store it in the local directory.
+Utilize the ftplib.retrbinary() method for file transfer.
+Internal Network Transfer:
+
+Use the shutil library to move the downloaded files from the local directory to the company's internal network directory.
+Ensure that the files are seamlessly transferred without any corruption.
+Scheduling:
+
+Use the schedule library to schedule the script to run daily at a specific time (e.g., 2:00 AM).
+Automate the file transfer process at the scheduled time without manual intervention.
+Error Handling and Logging:
+
+Implement error handling mechanisms to capture and log any errors that occur during the file transfer process.
+Utilize the logging library to create a log file (transfer.log) to record successful file transfers and any encountered errors.
+Constraints:
+
+Ensure the script can handle different file types and sizes commonly found in the data files.
+Use appropriate security measures, such as secure FTP (SFTP) or FTPS, to protect the file transfer process.
+The script should be well-documented with clear comments explaining each step and the purpose of the code blocks.
+Consider the possibility of network interruptions and implement robust error handling to resume the file transfer process seamlessly.
+Expected Output:
+
+Upon running the script, it should establish a connection with the external FTP server, download the daily data files, transfer them to the local directory, and then move them to the company's internal network directory. The script should run automatically at the scheduled time each day, ensuring the timely and secure transfer of essential data files.
+
+Note: Before executing the script, ensure that the FTP server credentials, directory paths, and scheduling time are correctly configured in the script.
